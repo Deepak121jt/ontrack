@@ -60,7 +60,7 @@ public class TaskSubmissionTest {
     @Test
     public void testGetTask_ReturnsCorrectContent() {
         ts.submitTask("s12345", "My task");
-        String task = ts.getTask("s12345");
+        String task = ts.getTask("s12345"); //triggering email
         assertEquals("My task", task);
     }
 
